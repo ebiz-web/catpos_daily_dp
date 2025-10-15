@@ -1,0 +1,9 @@
+$header-container: 240px;
+$interval: 16px;
+$color-primary: #2d406e;
+$color-info-light: #a6a6a6;
+
+@mixin header-image() {
+  position: absolute;
+  height: auto;
+}

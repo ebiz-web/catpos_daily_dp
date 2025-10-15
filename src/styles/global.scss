@@ -1,0 +1,93 @@
+@use "variables" as *;
+
+.login-container {
+  background: url("@/assets/images/login-bg.png") no-repeat;
+  background-size: cover;
+  padding: 30px 20px;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.page-layout {
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.header-container {
+  width: 100%;
+  position: relative;
+  z-index: 1000;
+  background-color: white;
+}
+
+.header-wrapper {
+  width: 100%;
+  height: $header-container;
+  background: url("@/assets/images/bg.png");
+  background-size: cover;
+  color: white;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-logo {
+  @include header-image();
+  top: 20px;
+  right: 20px;
+}
+
+.header-chart {
+  @include header-image();
+  background: url("@/assets/images/chart-shadow.png") no-repeat;
+  background-size: 100px;
+  background-position-x: left;
+  background-position-y: 40px;
+  top: 55px;
+  right: 15px;
+  padding-bottom: 20px;
+}
+
+.header-receipt {
+  @include header-image();
+  top: 40px;
+  right: -25px;
+}
+
+.header-content {
+  position: sticky;
+  z-index: 1;
+}
+
+.closing-container {
+  width: calc(100% - 40px);
+  height: 54px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 8px;
+  position: absolute;
+  top: calc($header-container - 27px);
+}
+
+.condition-container {
+  padding: 37px 20px 10px 20px;
+}
+
+.category-container {
+  height: 42px;
+  background-color: #eeeeee;
+  border-radius: 80px;
+  padding: 4px;
+  box-shadow: 1px 1px 2px 0px #0000001A inset;
+}
+
+.space-wrapper {
+  padding: 10px;
+}
+
+.color-info-light {
+  color: $color-info-light;
+}
